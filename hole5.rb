@@ -9,7 +9,9 @@ def caesar(str, offset = 1)
 
   encrypt = key_l.merge(key_c)
 
-  cyph = str.split('').each { | c | puts encrypt[c] }
+  cyph = str.split('').each do { | c |
+    puts encrypt[c]
+  }
 end
 
 caesar('Wow, So cool!', 5)
